@@ -21,3 +21,8 @@ $("input[type='text']").keypress(function(event) {
         $("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + newToDo + "</li>");
     }
 })
+
+$("h1 i").on("click", function() {
+    // fade out input field
+    $("input").fadeToggle()
+})
